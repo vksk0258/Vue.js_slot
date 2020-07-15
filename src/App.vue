@@ -1,10 +1,13 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
+      <router-link to="/">Home</router-link> <!--라우터를 사용하고 싶으면 <router-link> 사용-->
       <router-link to="/about">About</router-link>
     </div>
-    <router-view/>
+    <!--"/"링크는 home컴포넌트를 가지고 있다
+    이때 router-view는 import를 이용해서 home컴포넌트로 바꿔준다
+    페이지는 바뀌지만 모든게 index.html안에서 실행된다-->
+    <router-view/> 
   </div>
 </template>
 

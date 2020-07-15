@@ -6,12 +6,12 @@ Vue.use(VueRouter)
 
   const routes = [
   {
-    path: '/',
-    name: 'Home',
+    path: '/', //URL 뒤에 아무것도 없으면 이동
+    name: 'Home',//페이지의 이름
     component: Home
   },
   {
-    path: '/about',
+    path: '/about', //주소URL 뒤에 /about이 오면 이동
     name: 'About',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
