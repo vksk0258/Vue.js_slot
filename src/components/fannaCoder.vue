@@ -1,7 +1,10 @@
 <template>
     <div>
         <h1>{{title}}</h1>
+        <slot name= "header" :fanna ="fanna"></slot>
         <p> {{ name }} </p>
+        <slot name= "body"></slot>
+        <slot></slot>
         <button @click="updateName">click</button>
     </div>
 
@@ -23,6 +26,7 @@ export default {
     },
     data() {
         return {
+            fanna : 'coder'
             //name : 'fanna' //프롭스랑 같은 이름의 변수를 사용하면 안된다
         }
     },
